@@ -46,6 +46,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Net45\Net45.csproj">
+      <Project>{ae59053f-4dba-4fc4-a864-315ec690d3d7}</Project>
+      <Name>Net45</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Portable\Portable.csproj">
       <Project>{8e18c586-6263-49a3-b702-655d685b1bab}</Project>
       <Name>Portable</Name>

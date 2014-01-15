@@ -25,7 +25,7 @@ namespace Facts
         [Fact]
         public void EvaluationEngine()
         {
-            //new Net45.EvaluationEngineTest().Run();
+            new Net45.EvaluationEngineTest().Run();
             new Portable.EvaluationEngineTest().Run();
         }
     }
