@@ -46,6 +46,9 @@
     <Reference Include="Appccelerate.Fundamentals">
       <HintPath>..\packages\Appccelerate.Fundamentals.2.1.0\lib\portable-windows8+net45\Appccelerate.Fundamentals.dll</HintPath>
     </Reference>
+    <Reference Include="Appccelerate.IO">
+      <HintPath>..\packages\Appccelerate.IO.2.2.0-Unstable0001\lib\net45\Appccelerate.IO.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,6 +60,7 @@
   <ItemGroup>
     <Compile Include="EvaluationEngineTest.cs" />
     <Compile Include="EventBrokerTest.cs" />
+    <Compile Include="IOTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

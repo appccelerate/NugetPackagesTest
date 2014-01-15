@@ -1,5 +1,5 @@
 ﻿//-------------------------------------------------------------------------------
-// <copyright file="Facts.cs" company="Appccelerate">
+// <copyright file="IOTest.cs" company="Appccelerate">
 //   Copyright (c) 2008-2014
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,29 +16,15 @@
 // </copyright>
 //-------------------------------------------------------------------------------
 
-namespace Facts
+namespace Net45
 {
-    using Xunit;
+    using Appccelerate.IO;
 
-    public class Facts
+    public class IOTest
     {
-        [Fact]
-        public void EvaluationEngine()
+        public void Run()
         {
-            new Net45.EvaluationEngineTest().Run();
-            new Portable.EvaluationEngineTest().Run();
-        }
-
-        [Fact]
-        public void EventBroker()
-        {
-            new Net45.EventBrokerTest().Run();
-        }
-
-        [Fact]
-        public void IO()
-        {
-            new Net45.IOTest().Run();
+            AbsoluteFilePath p = @"c:\folder\file.ext";
         }
     }
 }
