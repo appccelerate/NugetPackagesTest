@@ -40,6 +40,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Appccelerate.EvaluationEngine.2.1.0\lib\portable-windows8+net45\Appccelerate.EvaluationEngine.dll</HintPath>
     </Reference>
+    <Reference Include="Appccelerate.EventBroker">
+      <HintPath>..\packages\Appccelerate.EventBroker.3.1.0\lib\net45\Appccelerate.EventBroker.dll</HintPath>
+    </Reference>
     <Reference Include="Appccelerate.Fundamentals">
       <HintPath>..\packages\Appccelerate.Fundamentals.2.1.0\lib\portable-windows8+net45\Appccelerate.Fundamentals.dll</HintPath>
     </Reference>
@@ -53,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EvaluationEngineTest.cs" />
+    <Compile Include="EventBrokerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

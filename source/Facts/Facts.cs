@@ -28,5 +28,11 @@ namespace Facts
             new Net45.EvaluationEngineTest().Run();
             new Portable.EvaluationEngineTest().Run();
         }
+
+        [Fact]
+        public void EventBroker()
+        {
+            new Net45.EventBrokerTest().Run();
+        }
     }
 }
