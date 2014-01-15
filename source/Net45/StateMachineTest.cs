@@ -1,5 +1,5 @@
 ﻿//-------------------------------------------------------------------------------
-// <copyright file="Facts.cs" company="Appccelerate">
+// <copyright file="StateMachineTest.cs" company="Appccelerate">
 //   Copyright (c) 2008-2014
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,36 +16,23 @@
 // </copyright>
 //-------------------------------------------------------------------------------
 
-namespace Facts
+namespace Net45
 {
-    using Xunit;
+    using Appccelerate.StateMachine;
 
-    public class Facts
+    public class StateMachineTest
     {
-        [Fact]
-        public void EvaluationEngine()
-        {
-            new Net45.EvaluationEngineTest().Run();
-            new Portable.EvaluationEngineTest().Run();
-        }
+         public void Run()
+         {
+             var machine = new PassiveStateMachine<int, int>();
 
-        [Fact]
-        public void EventBroker()
-        {
-            new Net45.EventBrokerTest().Run();
-        }
+             machine.In(1)
+                 .On(2).Goto(2);
 
-        [Fact]
-        public void IO()
-        {
-            new Net45.IOTest().Run();
-        }
+             machine.Initialize(1);
+             machine.Start();
 
-        [Fact]
-        public void StateMachine()
-        {
-            new Net45.StateMachineTest().Run();
-            new Portable.StateMachineTest().Run();
-        }
+             machine.Fire(2);
+         }
     }
 }
