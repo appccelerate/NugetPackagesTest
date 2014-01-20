@@ -47,5 +47,11 @@ namespace Facts
             new Net45.StateMachineTest().Run();
             new Portable.StateMachineTest().Run();
         }
+
+        [Fact]
+        public void Bootstrapper()
+        {
+            new Net45.BootstrapperTest().Run();
+        }
     }
 }

@@ -36,6 +36,10 @@
     <AssemblyOriginatorKeyFile>Net45.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Appccelerate.Bootstrapper, Version=2.1.0.0, Culture=neutral, PublicKeyToken=917bca444d1f2b4c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Appccelerate.Bootstrapper.2.1.0\lib\net45\Appccelerate.Bootstrapper.dll</HintPath>
+    </Reference>
     <Reference Include="Appccelerate.EvaluationEngine, Version=2.1.0.0, Culture=neutral, PublicKeyToken=917bca444d1f2b4c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Appccelerate.EvaluationEngine.2.1.0\lib\portable-windows8+net45\Appccelerate.EvaluationEngine.dll</HintPath>
@@ -53,6 +57,7 @@
       <HintPath>..\packages\Appccelerate.StateMachine.2.1.0\lib\portable-windows8+net45\Appccelerate.StateMachine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BootstrapperTest.cs" />
     <Compile Include="EvaluationEngineTest.cs" />
     <Compile Include="EventBrokerTest.cs" />
     <Compile Include="IOTest.cs" />
