@@ -53,5 +53,12 @@ namespace Facts
         {
             new Net45.BootstrapperTest().Run();
         }
+
+        [Fact]
+        public void Fundamentals()
+        {
+            new Net45.FundamentalsTest().Run();
+            new Portable.FundamentalsTest().Run();
+        }
     }
 }

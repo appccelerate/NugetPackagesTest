@@ -18,9 +18,11 @@
 
 namespace Net45
 {
+    using System;
     using System.Reflection;
     using Appccelerate.EvaluationEngine;
     using Appccelerate.EvaluationEngine.Expressions;
+    using Appccelerate.Events;
 
     public class EvaluationEngineTest
     {
